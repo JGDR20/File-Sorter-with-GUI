@@ -5,29 +5,30 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:FileSortGUI"
         mc:Ignorable="d"
-        Title="File Sorter" Height="450" Width="668.745">
+        Title="File Sorter" Height="450" Width="700">
     <Grid AutomationProperties.IsRequiredForForm="True">
         <Label x:Name="lblSrc" Content="Source:" HorizontalAlignment="Left" Margin="10,20,0,0" VerticalAlignment="Top" Width="75"/>
-        <TextBox x:Name="txtSrc" HorizontalAlignment="Left" Height="26" Margin="88,20,0,0" TextWrapping="Wrap" Text="Source Directory" VerticalAlignment="Top" Width="483" AutomationProperties.IsRequiredForForm="True" AutomationProperties.HelpText="Source Directory" Padding="0,4,0,0"/>
-        <Button x:Name="btnSrc" Content="..." HorizontalAlignment="Left" Margin="576,20,0,0" VerticalAlignment="Top" Width="75" Height="26"/>
+        <TextBox x:Name="txtSrc" HorizontalAlignment="Left" Height="26" Margin="88,20,0,0" TextWrapping="Wrap" Text="Source Directory" VerticalAlignment="Top" Width="514" AutomationProperties.IsRequiredForForm="True" AutomationProperties.HelpText="Source Directory" Padding="0,4,0,0"/>
+        <Button x:Name="btnSrc" Content="..." HorizontalAlignment="Left" Margin="607,20,0,0" VerticalAlignment="Top" Width="75" Height="26"/>
         <Label x:Name="lblDest" Content="Destination:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtDest" HorizontalAlignment="Left" Height="26" Margin="88,60,0,0" TextWrapping="Wrap" Text="Destination Directoy" VerticalAlignment="Top" Width="483" AutomationProperties.IsRequiredForForm="True" AutomationProperties.HelpText="Destination Directory" Padding="0,4,0,0"/>
-        <Button x:Name="btnDest" Content="..." HorizontalAlignment="Left" Margin="576,60,0,0" VerticalAlignment="Top" Width="75" Height="26"/>
+        <TextBox x:Name="txtDest" HorizontalAlignment="Left" Height="26" Margin="88,60,0,0" TextWrapping="Wrap" Text="Destination Directoy" VerticalAlignment="Top" Width="514" AutomationProperties.IsRequiredForForm="True" AutomationProperties.HelpText="Destination Directory" Padding="0,4,0,0"/>
+        <Button x:Name="btnDest" Content="..." HorizontalAlignment="Left" Margin="607,60,0,0" VerticalAlignment="Top" Width="75" Height="26"/>
         <Label x:Name="lblDesc" Content="Description:" HorizontalAlignment="Left" Margin="10,100,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtDesc" HorizontalAlignment="Left" Height="26" Margin="88,100,0,0" TextWrapping="Wrap" Text="Description to append to destination" VerticalAlignment="Top" Width="234" AutomationProperties.IsRequiredForForm="False" AutomationProperties.HelpText="Destination Directory Description Append" Padding="0,4,0,0"/>
-        <Label x:Name="lblInclude" Content="Description:" HorizontalAlignment="Left" Margin="367,100,0,0" VerticalAlignment="Top"/>
-        <TextBox x:Name="txtInclude" HorizontalAlignment="Left" Height="26" Margin="445,100,0,0" TextWrapping="Wrap" Text="File Types" VerticalAlignment="Top" Width="206" AutomationProperties.IsRequiredForForm="True" AutomationProperties.HelpText="File Types" Padding="0,4,0,0"/>
+        <TextBox x:Name="txtDesc" HorizontalAlignment="Left" Height="26" Margin="88,100,0,0" TextWrapping="Wrap" Text="Description to append to destination" VerticalAlignment="Top" Width="300" AutomationProperties.IsRequiredForForm="False" AutomationProperties.HelpText="Destination Directory Description Append" Padding="0,4,0,0"/>
+        <Label x:Name="lblInclude" Content="Include:" HorizontalAlignment="Left" Margin="420,100,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtInclude" HorizontalAlignment="Left" Height="26" Margin="476,100,0,0" TextWrapping="Wrap" Text="File Types" VerticalAlignment="Top" Width="206" AutomationProperties.IsRequiredForForm="True" AutomationProperties.HelpText="File Types" Padding="0,4,0,0"/>
+        <Label x:Name="lblIncludeHint" Content="Comma, Space or Tab separated e.g. *.txt, *.csv *.jpg" HorizontalAlignment="Left" Margin="476,126,0,0" VerticalAlignment="Top" Width="206" FontStyle="Italic" FontSize="8"/>
         <Label x:Name="lblDateStart" Content="Start Date:" HorizontalAlignment="Left" Margin="10,140,0,0" VerticalAlignment="Top" Width="75"/>
         <DatePicker x:Name="dtStart" HorizontalAlignment="Left" Margin="88,140,0,0" VerticalAlignment="Top" Height="26" Padding="2,3,2,2"/>
-        <Label x:Name="lblDateEnd" Content="End Date:" HorizontalAlignment="Left" Margin="238,140,0,0" VerticalAlignment="Top" Width="75"/>
-        <DatePicker x:Name="dtEnd" HorizontalAlignment="Left" Margin="318,140,0,0" VerticalAlignment="Top" Height="26" Padding="2,3,2,2"/>
-        <Button x:Name="btnGo" Content="Go" HorizontalAlignment="Center" Margin="10,180,0,0" VerticalAlignment="Top" Width="75" Height="26"/>
-        <Separator x:Name="sepResults" HorizontalAlignment="Center" Height="10" Margin="10,220,0,0" VerticalAlignment="Top" Width="100"/>
-        <Label x:Name="lblResults" Content="Results" HorizontalAlignment="Center" Margin="10,240,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="lblDateEnd" Content="End Date:" HorizontalAlignment="Left" Margin="206,140,0,0" VerticalAlignment="Top" Width="75"/>
+        <DatePicker x:Name="dtEnd" HorizontalAlignment="Left" Margin="286,140,0,0" VerticalAlignment="Top" Height="26" Padding="2,3,2,2"/>
+        <Button x:Name="btnGo" Content="Go" HorizontalAlignment="Left" Margin="310,180,0,0" VerticalAlignment="Top" Width="70" Height="26"/>
+        <Separator x:Name="sepResults" HorizontalAlignment="Left" Height="10" Margin="100,220,0,0" VerticalAlignment="Top" Width="500"/>
+        <Label x:Name="lblResults" Content="Results" Margin="310,240,0,0" VerticalAlignment="Top" Width="70" HorizontalAlignment="Left" HorizontalContentAlignment="Center"/>
         <Label x:Name="lblCopied" Content="Copied:" HorizontalAlignment="Left" Margin="10,280,0,0" VerticalAlignment="Top" Width="75"/>
         <TextBox x:Name="txtCopied" HorizontalAlignment="Left" Height="26" Margin="88,280,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="53" Padding="0,4,0,0" IsReadOnly="True"/>
         <Label x:Name="lblSkipped" Content="Skipped:" HorizontalAlignment="Left" Margin="171,280,0,0" VerticalAlignment="Top" Width="75"/>
         <TextBox x:Name="txtSkipped" HorizontalAlignment="Left" Height="26" Margin="249,280,0,0" TextWrapping="Wrap" Text="0" VerticalAlignment="Top" Width="53" Padding="0,4,0,0" IsReadOnly="True"/>
-        <TextBox x:Name="txtOutput" HorizontalAlignment="Left" Height="80" Margin="10,320,0,0" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" Width="641" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" IsReadOnly="True"/>
+        <TextBox x:Name="txtOutput" HorizontalAlignment="Left" Height="80" Margin="10,320,0,0" TextWrapping="Wrap" Text="Output" VerticalAlignment="Top" Width="672" VerticalScrollBarVisibility="Auto" ScrollViewer.CanContentScroll="True" IsReadOnly="True"/>
     </Grid>
 </Window>
