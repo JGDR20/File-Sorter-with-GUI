@@ -60,6 +60,7 @@ function Start-Sort ($StartDate, $EndDate, $Source, $Destination, $Include, $Des
 	    $IncludeArray = @("*.*")
     } else {
         $IncludeArray = $Include -Split '[,\s\t]+'
+    }
     
     $Output = ($Output + "`nCopying files between " + $StartDate.ToString("yyyy-MM-dd") + " and " + $EndDate.ToString("yyyy-MM-dd"))
     $Output = ($Output + "`nFrom " + $Source + " to " + $Destination)
